@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kỷ niệm của chúng mình 📸</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/page3.css">
+</head>
+<body>
+    <div class="container page3-bg">
+        <h1 class="gallery-title">📸 Kỷ Niệm Của Chúng Mình 📸</h1>
+        <p class="gallery-subtitle">Những khoảnh khắc đáng nhớ nhất 💕</p>
+        
+        <!-- Photo/Video Gallery (5 video dọc + 1 ảnh dọc) -->
+        <div class="gallery">
+            <div class="gallery-row">
+                <!-- Top row: 3 videos -->
+                <div class="polaroid" onclick="openModal(0)">
+                    <div class="photo">
+                        <video src="img/12344987967677376305.mp4" playsinline muted preload="metadata" style="width:100%;height:100%;object-fit:cover;aspect-ratio:9/16;display:block;background:#000;"></video>
+                    </div>
+                    <p class="caption">Cũng đúng thoai...</p>
+                </div>
+                <div class="polaroid" onclick="openModal(1)">
+                    <div class="photo">
+                        <video src="img/12402497028579159522.mp4" playsinline muted preload="metadata" style="width:100%;height:100%;object-fit:cover;aspect-ratio:9/16;display:block;background:#000;"></video>
+                    </div>
+                    <p class="caption">Tỉ số em  10 - anh 1 </p>
+                </div>
+                <div class="polaroid" onclick="openModal(2)">
+                    <div class="photo">
+                        <video src="img/1707880835491619579.mp4" playsinline muted preload="metadata" style="width:100%;height:100%;object-fit:cover;aspect-ratio:9/16;display:block;background:#000;"></video>
+                    </div>
+                    <p class="caption">Chuym...</p>
+                </div>
+            </div>
+            <div class="gallery-row">
+                <!-- Bottom row: 2 videos + 1 image -->
+                <div class="polaroid" onclick="openModal(3)">
+                    <div class="photo">
+                        <video src="img/45910378853799757404.mp4" playsinline muted preload="metadata" style="width:100%;height:100%;object-fit:cover;aspect-ratio:9/16;display:block;background:#000;"></video>
+                    </div>
+                    <p class="caption">Dễ huông</p>
+                </div>
+                <div class="polaroid" onclick="openModal(4)">
+                    <div class="photo">
+                        <video src="img/81709956560010319711.mp4" playsinline muted preload="metadata" style="width:100%;height:100%;object-fit:cover;aspect-ratio:9/16;display:block;background:#000;"></video>
+                    </div>
+                    <p class="caption">Slays vãi ò</p>
+                </div>
+                <div class="polaroid" onclick="openModal(5)">
+                    <div class="photo">
+                        <img src="img/86b8501057d1da8f83c06.jpg" alt="Tấm hình em xinh 💞" style="width:100%;height:100%;object-fit:cover;aspect-ratio:9/16;display:block;" />
+                    </div>
+                    <p class="caption">Xênh hemmm 💞</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Next Button -->
+        <button class="next-btn" onclick="nextPage()">Xem tiếp nè 😊</button>
+        
+        <!-- Secret Link to Private Page -->
+        <button class="secret-link" onclick="goToPrivate()">
+            <span class="lock-emoji">🔒</span>
+            Khoảnh khắc riêng tư...
+        </button>
+    </div>
+
+    <!-- Modal for enlarged photo -->
+    <div id="photoModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div id="modalPhoto" class="modal-photo"></div>
+            <p id="modalCaption" class="modal-caption"></p>
+        </div>
+    </div>
+
+    <!-- Audio -->
+    <audio id="bgMusic" loop autoplay>
+        <source src="assets/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="js/page3.js"></script>
+</body>
+</html>

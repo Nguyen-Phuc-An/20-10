@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Góc tinh nghịch 😜</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/page4.css">
+</head>
+<body>
+    <div class="container page4-bg">
+        <div class="content-center">
+            <h1 class="main-title">Chào cô gái tò mò! 😊</h1>
+            <p class="main-text">Đã đi được xa rồi nè, sắp hết rồi đó...</p>
+            <p class="main-text">Nhưng mà... có một bí mật nho nhỏ ở đây 🤭</p>
+            
+            <button class="next-btn main-next" onclick="nextPage()">Đến trang cuối nào 💕</button>
+        </div>
+
+        <!-- Secret Button -->
+        <button class="secret-btn" id="secretBtn">Đừng bấm vào đây nha 😏</button>
+    </div>
+
+    <!-- Secret Popup -->
+    <div id="secretPopup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close" onclick="closePopup()">&times;</span>
+            <div class="popup-body">
+                <h2 class="popup-title">Hihi, anh biết em sẽ bấm mà 😝</h2>
+                <p class="popup-text">Vì em tò mò đáng yêu lắm luôn.</p>
+                <p class="popup-text">Định để ảnh nút mà sợ iem hem thích nên là...</p>
+                <p class="popup-text">Thưởng cho em nụ hôn ảo nè 💋</p>
+                <div class="kiss-mark">chụt~</div>
+                <div id="kissContainer"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio -->
+    <audio id="bgMusic" loop autoplay>
+        <source src="assets/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="js/page4.js"></script>
+</body>
+</html>
